@@ -5,6 +5,6 @@ package example.com.motionstudiolib;
  */
 public class MyModule {
 	public static String test() {
-		return "test";
+		return "something";
 	}
 }

@@ -21,8 +21,7 @@ Motion::Project::App.setup do |app|
     repository 'https://bintray.com/bintray/jcenter'
     repository 'https://dl.bintray.com/realm/maven'
     repository 'http://dl.bintray.com/austintaylor/gradle'
-
-    compile project(':motionstudiolib') # ideal imaginary project dependency. see MotionStudio/app/build.gradle
+    library 'motionstudiolib', path: '/Users/gary/repos/MotionStudio/motionstudiolib'
   end
 
 end
