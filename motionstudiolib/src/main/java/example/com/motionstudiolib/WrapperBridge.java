@@ -2,9 +2,9 @@ package example.com.motionstudiolib;
 
 public class WrapperBridge {
 
-	private final IRubyReceiver receiver;
+	private final IReceiver receiver;
 
-	public WrapperBridge(IRubyReceiver aReceiver) {
+	public WrapperBridge(IReceiver aReceiver) {
 		receiver = aReceiver;
 	}
 

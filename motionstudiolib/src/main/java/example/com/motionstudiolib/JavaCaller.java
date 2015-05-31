@@ -2,20 +2,20 @@ package example.com.motionstudiolib;
 
 public class JavaCaller {
 
-	private IRubyReceiver receiver;
+	private IReceiver receiver;
 
 	public JavaCaller() {
 	}
 
-	public JavaCaller(IRubyReceiver aReceiver) {
+	public JavaCaller(IReceiver aReceiver) {
 		this.receiver = aReceiver;
 	}
 
-	public IRubyReceiver getReceiver() {
+	public IReceiver getReceiver() {
 		return receiver;
 	}
 
-	public void setReceiver(IRubyReceiver receiver) {
+	public void setReceiver(IReceiver receiver) {
 		this.receiver = receiver;
 	}
 
