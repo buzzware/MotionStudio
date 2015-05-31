@@ -9,12 +9,12 @@ describe "wrapper bridge object for Green Robot EventBus" do
 		receiver.simple_object.should == event
 	end
 
-#	it "split bridge works in Java" do
-#		bridge = SplitBridge.new
-#		event = Example::Com::Motionstudiolib::SimpleJavaObject.new
-#		caller = JavaEventCaller.new
-#		caller.call(bridge,event);
-#		bridge.onEvent(event)
-#		bridge.event.should == event
-#	end
+	it "split bridge works in Java" do
+		receiver = RubyReceiver.new
+		bridge = Example::Com::Motionstudiolib::WrapperBridge.new(receiver)
+		event = Example::Com::Motionstudiolib::SimpleJavaObject.new
+		caller = Example::Com::Motionstudiolib::JavaWrapperBridgeCaller.new
+		caller.call(bridge,event);
+		receiver.simple_object.should == event
+	end
 end
